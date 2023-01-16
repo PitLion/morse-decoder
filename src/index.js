@@ -51,7 +51,6 @@ function decode(expr) {
      for (key in MORSE_TABLE) {
        let arr = key.split('');
        let newArr = arr.map(item => (item === '.') ? 10 : 11);
-
        let str = newArr.join('');
        let myStr = '';
        if (str.length < 10) {
